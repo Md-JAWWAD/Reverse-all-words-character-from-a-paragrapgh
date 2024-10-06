@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script src="script.js">
+
+// Reverse all words character from a paragrapgh.
+// For example: paragrapgh = i am jawad , reverse paragrapgh = i ma dawaj   
+
+var day = Number(prompt('Write 1 to 7 for days'));
+( day == 1 ) ?  console.log('Monday') : ( day == 2 ) ? console.log('Tuesday') : ( day == 3 ) ? console.log('Wednesday') : (day == 4 ) ? console.log('Thursday') : (day == 5 ) ? console.log('Friday') : (day == 6 ) ?  console.log('Satursday') : console.log('Sunday') 
+
+var userType = prompt('Write any para')
+var userArr = userType.split(' ')
+console.log(userArr);
+var rev = '';
+for (let i = 0; i < userArr.length ; i++)
+{
+    var aRy =  userArr[i].split('').reverse().join('') + ' ';
+    rev = rev + aRy;
+}
+
+console.log(rev);
+
+    </script>
+</body>
+</html>
